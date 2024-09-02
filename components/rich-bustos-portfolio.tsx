@@ -59,7 +59,7 @@ export function RichBustosPortfolio() {
             <a href="#" className="text-blue-600 dark:text-blue-400 hover:underline flex items-center">
               <ExternalLink className="w-4 h-4 mr-2" /> vibe knights - digital collectibles
             </a>
-            <p className="text-green-600 dark:text-green-400">2022-2023 - led an art project that blended anime, AI curation, and blockchain to make a beautiful collection of 4663 pfp's.</p>
+            <p className="text-green-600 dark:text-green-400">2022-2023 - led an art project that blended anime, AI curation, and blockchain to make a beautiful collection of 4663 pfps.</p>
           </li>
         </ul>
       </div>
