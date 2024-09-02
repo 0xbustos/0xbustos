@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { ChevronRight, ChevronDown, Twitter, Youtube, Instagram, Twitch, Music, ExternalLink } from 'lucide-react'
+import Image from 'next/image';
 
 export function RichBustosPortfolio() {
   const [activeSection, setActiveSection] = useState<string>('home')
@@ -23,7 +24,7 @@ export function RichBustosPortfolio() {
     home: (
       <div className="space-y-4">
         <h1 className="text-2xl font-bold text-purple-600 dark:text-purple-400">
-          hi, i'm rich, also known as bustos. welcome to my creative hub where music, technology, and philanthropy converge.
+          hi, im rich, also known as bustos. welcome to my creative hub where music, technology, and philanthropy converge.
         </h1>
         <p className="text-green-600 dark:text-green-400">get in touch</p>
         <a href="mailto:me@richbustos.com" className="text-blue-600 dark:text-blue-400 hover:underline">me@richbustos.com</a>
@@ -118,7 +119,7 @@ export function RichBustosPortfolio() {
     //     <ul className="space-y-2">
     //       <li>
     //         <a href="https://open.spotify.com/track/your_track_id" className="text-blue-600 dark:text-blue-400 hover:underline flex items-center">
-    //           <ExternalLink className="w-4 h-4 mr-2" /> latest single: "digital dreams"
+    //           <ExternalLink className="w-4 h-4 mr-2" /> latest single: &apos;digital dreams&apos;
     //         </a>
     //         <p className="text-green-600 dark:text-green-400">a fusion of electronic beats and soulful melodies.</p>
     //         <a href="https://open.spotify.com/track/your_track_id" className="text-blue-600 dark:text-blue-400 hover:underline flex items-center">
@@ -127,7 +128,7 @@ export function RichBustosPortfolio() {
     //       </li>
     //       <li>
     //         <a href="https://open.spotify.com/album/your_album_id" className="text-blue-600 dark:text-blue-400 hover:underline flex items-center">
-    //           <ExternalLink className="w-4 h-4 mr-2" /> album: "web3 symphonies"
+    //           <ExternalLink className="w-4 h-4 mr-2" /> album: &apos;web3 symphonies&apos;
     //         </a>
     //         <p className="text-green-600 dark:text-green-400">blending traditional instruments with blockchain-inspired sound design.</p>
     //         <a href="https://open.spotify.com/album/your_album_id" className="text-blue-600 dark:text-blue-400 hover:underline flex items-center">
@@ -143,10 +144,11 @@ export function RichBustosPortfolio() {
     <div className={`min-h-screen ${isDarkMode ? 'bg-gray-900 text-green-400' : 'bg-white text-gray-800'} font-mono transition-colors duration-300`}>
       <div className="container mx-auto px-4 py-8">
         <div className="flex items-center mb-8">
-          <img
+          <Image
             src="/placeholder.svg?height=24&width=24"
             alt="Rich Bustos"
-            className="w-6 h-6 rounded-full mr-2"
+            width={24}
+            height={24}
           />
           <h1 className="text-lg font-bold text-purple-600 dark:text-purple-400">rich bustos</h1>
         </div>
